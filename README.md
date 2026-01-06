@@ -14,6 +14,17 @@ This repo holds a highly focused, purged CSS bundle used to style the Lander WYS
 3. Paste or upload the contents of `wysiwyg-min.css` into the Cascade CMS WYSIWYG editor configuration:
    `https://lander-admin.cascadecms.com/entity/open.act?id=DEFAULT&type=editorconfiguration`
 
+## CodeKit setup
+
+- Any `.html` file in this directory is used as a purge source, so keep representative pages here.
+- For `wysiwyg.css`, set CodeKit options to:
+  - Combine imported files: on
+  - Purge unused CSS rules: always
+  - Minify the output: always
+  - Create a source map: never
+  - When this file changes or builds: Process It
+  - Output: `/Lander/wysiwyg-min.css`
+
 ## Notes
 
 - Cascade CMS does not have access to local paths, so ensure any `url()` references in the final CSS point to public assets.
