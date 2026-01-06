@@ -1,0 +1,113 @@
+/* SmartBoard Widget */
+
+.omnilert_wrapper
+{
+	position: fixed !important;
+    bottom: 0;
+	display: none;
+    justify-content: center;
+	background-color: #FFFFFF !important;
+    border: 5px solid #FF5300 !important;
+	z-index: 999999 !important;
+
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.omnilert_container
+{
+	/* position: fixed !important; */
+    /* bottom: 0; */
+	display: flex;
+	
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	
+    justify-content: space-between;
+    /* max-width: 700px !important; */
+    /* min-width: 320px !important; */
+    /* left: 50% !important; */
+    /* transform: translate(-50%, 0); */
+}
+
+.table-container
+{
+	 
+}
+
+.SmartBoard_Table
+{ 
+	padding: 10px !important;
+	background-color: #FFFFFF !important; 
+    border: none !important;
+	max-width: 75% !important;
+}
+
+.SmartBoard_Row 
+{ 
+	font-family: Arial, Helvetica, sans-serif !important; 
+    color: #FF0000 !important; 
+}
+
+.SmartBoard_Subject
+{ 
+	font-weight: bold !important; 
+    font-size: 30px !important;
+    width: 400px !important; 
+    color: #F85000 !important; 
+    padding: 10px !important; 
+	text-align: left !important;
+}
+
+.SmartBoard_DateTime
+{ 
+	font-size: small !important;
+    font-variant: small-caps !important;
+    color: #F85000 !important;
+    padding: 10px !important;
+    text-align: right; 
+}
+
+.SmartBoard_Message
+{ 
+	font-family: Arial, Helvetica, sans-serif !important; 
+    color: #000000 !important; 
+    padding: 10px !important; 
+	text-align: left !important;
+}
+
+.alert_close
+{
+	position: static;
+    border: 1px solid #F85000;
+    top: 10px;
+    right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px;
+    max-height: 35px;
+}
+
+.alert_close::after
+{
+	content: "X";
+    /* font-family: "huffington-icons"; */
+    font-style: normal;
+    font-weight: bolder;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+    line-height: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 25px;
+    width: 25px;
+    color: #F85000;
+    cursor: pointer;
+}
+
+
+
